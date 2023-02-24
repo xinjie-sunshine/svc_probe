@@ -9,7 +9,7 @@ import (
 
 func Api_probe() {
 	// 多个API地址
-	apiAddrs := []string{"https://www.baidu.com", "https://pay.sc.189.cn"}
+	apiAddrs := []string{"https://www.baidu.com", "https://cn.bing.com/"}
 
 	// 创建日志文件
 	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
