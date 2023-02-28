@@ -1,0 +1,785 @@
+2023/02/24 17:33:37 127.0.0.1:3306 可达
+2023/02/24 17:33:37 127.0.0.1:6379 可达
+2023/02/24 17:33:38 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/24 17:33:39 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/24 17:33:42 Redis节点存活状态: 存活
+2023/02/24 17:33:42 MySQL 服务正常
+2023/02/24 17:33:42 API https://www.baidu.com 状态码正常 
+2023/02/24 17:33:42 API https://cn.bing.com/ 状态码正常 
+2023/02/24 17:33:44 127.0.0.1:3306 可达
+2023/02/24 17:33:44 127.0.0.1:6379 可达
+2023/02/24 17:33:44 Elasticsearch 不可用
+2023/02/24 17:33:45 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/24 17:33:46 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/24 17:33:47 Redis节点存活状态: 存活
+2023/02/24 17:33:47 MySQL 服务正常
+2023/02/24 17:33:47 API https://www.baidu.com 状态码正常 
+2023/02/24 17:33:47 API https://cn.bing.com/ 状态码正常 
+2023/02/24 17:33:49 Elasticsearch 不可用
+2023/02/24 17:33:52 Redis节点存活状态: 存活
+2023/02/24 17:33:52 MySQL 服务正常
+2023/02/24 17:33:52 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/24 17:33:52 127.0.0.1:3306 可达
+2023/02/24 17:33:52 127.0.0.1:6379 可达
+2023/02/24 17:33:52 API https://www.baidu.com 状态码正常 
+2023/02/24 17:33:52 API https://cn.bing.com/ 状态码正常 
+2023/02/24 17:33:53 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/24 17:33:54 Elasticsearch 不可用
+2023/02/24 17:33:57 Redis节点存活状态: 存活
+2023/02/24 17:33:57 MySQL 服务正常
+2023/02/24 17:33:57 API https://www.baidu.com 状态码正常 
+2023/02/24 17:33:57 API https://cn.bing.com/ 状态码正常 
+2023/02/24 17:33:58 127.0.0.1:3306 可达
+2023/02/24 17:33:58 127.0.0.1:6379 可达
+2023/02/24 17:33:59 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/24 17:33:59 Elasticsearch 不可用
+2023/02/24 17:34:00 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:38:50 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:38:51 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:38:52 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:38:53 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:38:59 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:39:00 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:39:01 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:39:02 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:39:03 API https://www.baidu.com 状态码正常 
+2023/02/27 16:39:03 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:39:05 Elasticsearch 不可用
+2023/02/27 16:39:05 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:39:08 API https://www.baidu.com 状态码正常 
+2023/02/27 16:39:08 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:39:08 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:39:09 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:39:10 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:39:10 Elasticsearch 不可用
+2023/02/27 16:39:10 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:39:11 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:39:12 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:40:10 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:40:11 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:40:12 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:40:13 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:40:14 API https://www.baidu.com 状态码正常 
+2023/02/27 16:40:14 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:40:16 Elasticsearch 不可用
+2023/02/27 16:40:16 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:40:19 API https://www.baidu.com 状态码正常 
+2023/02/27 16:40:19 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:40:19 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:40:20 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:40:21 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:40:21 Elasticsearch 不可用
+2023/02/27 16:40:21 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:40:22 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:40:23 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:41:27 API https://www.baidu.com 状态码正常 
+2023/02/27 16:41:27 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:41:29 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:41:29 Elasticsearch 不可用
+2023/02/27 16:41:32 API https://www.baidu.com 状态码正常 
+2023/02/27 16:41:32 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:41:34 Elasticsearch 不可用
+2023/02/27 16:41:34 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:41:36 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:42:24 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:24 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:42:26 Elasticsearch 不可用
+2023/02/27 16:42:26 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:42:29 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:29 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:42:31 Elasticsearch 不可用
+2023/02/27 16:42:31 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:42:34 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:34 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:42:36 Elasticsearch 不可用
+2023/02/27 16:42:36 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:42:39 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:39 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:42:41 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:42:41 Elasticsearch 不可用
+2023/02/27 16:42:44 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:44 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:42:46 Elasticsearch 不可用
+2023/02/27 16:42:46 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:42:49 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:49 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:42:51 Elasticsearch 不可用
+2023/02/27 16:42:51 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:42:54 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:54 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:42:56 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:42:56 Elasticsearch 不可用
+2023/02/27 16:42:59 API https://www.baidu.com 状态码正常 
+2023/02/27 16:42:59 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:43:01 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:43:01 Elasticsearch 不可用
+2023/02/27 16:43:04 API https://www.baidu.com 状态码正常 
+2023/02/27 16:43:04 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:43:06 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:43:06 Elasticsearch 不可用
+2023/02/27 16:43:09 API https://www.baidu.com 状态码正常 
+2023/02/27 16:43:09 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:43:11 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:43:11 Elasticsearch 不可用
+2023/02/27 16:43:14 API https://www.baidu.com 状态码正常 
+2023/02/27 16:43:14 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:43:16 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:43:16 Elasticsearch 不可用
+2023/02/27 16:43:19 API https://www.baidu.com 状态码正常 
+2023/02/27 16:43:19 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:43:21 Elasticsearch 不可用
+2023/02/27 16:43:21 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:43:24 API https://www.baidu.com 状态码正常 
+2023/02/27 16:43:24 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:43:26 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:43:26 Elasticsearch 不可用
+2023/02/27 16:44:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:44:32 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:44:33 Elasticsearch 不可用
+2023/02/27 16:44:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:44:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:44:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:44:38 Elasticsearch 不可用
+2023/02/27 16:44:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:44:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:44:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:44:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:44:43 Elasticsearch 不可用
+2023/02/27 16:44:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:44:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:44:48 Elasticsearch 不可用
+2023/02/27 16:44:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:44:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:44:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:44:53 Elasticsearch 不可用
+2023/02/27 16:44:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:44:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:44:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:44:58 Elasticsearch 不可用
+2023/02/27 16:44:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:03 Elasticsearch 不可用
+2023/02/27 16:45:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:08 Elasticsearch 不可用
+2023/02/27 16:45:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:13 Elasticsearch 不可用
+2023/02/27 16:45:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:18 Elasticsearch 不可用
+2023/02/27 16:45:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:23 Elasticsearch 不可用
+2023/02/27 16:45:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:28 Elasticsearch 不可用
+2023/02/27 16:45:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:33 Elasticsearch 不可用
+2023/02/27 16:45:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:38 Elasticsearch 不可用
+2023/02/27 16:45:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:43 Elasticsearch 不可用
+2023/02/27 16:45:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:48 Elasticsearch 不可用
+2023/02/27 16:45:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:53 Elasticsearch 不可用
+2023/02/27 16:45:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:45:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:45:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:45:58 Elasticsearch 不可用
+2023/02/27 16:46:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:03 Elasticsearch 不可用
+2023/02/27 16:46:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:08 Elasticsearch 不可用
+2023/02/27 16:46:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:13 Elasticsearch 不可用
+2023/02/27 16:46:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:18 Elasticsearch 不可用
+2023/02/27 16:46:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:23 Elasticsearch 不可用
+2023/02/27 16:46:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:28 Elasticsearch 不可用
+2023/02/27 16:46:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:33 Elasticsearch 不可用
+2023/02/27 16:46:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:38 Elasticsearch 不可用
+2023/02/27 16:46:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:43 Elasticsearch 不可用
+2023/02/27 16:46:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:48 Elasticsearch 不可用
+2023/02/27 16:46:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:53 Elasticsearch 不可用
+2023/02/27 16:46:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:46:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:46:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:46:58 Elasticsearch 不可用
+2023/02/27 16:47:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:03 Elasticsearch 不可用
+2023/02/27 16:47:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:08 Elasticsearch 不可用
+2023/02/27 16:47:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:13 Elasticsearch 不可用
+2023/02/27 16:47:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:18 Elasticsearch 不可用
+2023/02/27 16:47:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:23 Elasticsearch 不可用
+2023/02/27 16:47:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:28 Elasticsearch 不可用
+2023/02/27 16:47:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:33 Elasticsearch 不可用
+2023/02/27 16:47:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:38 Elasticsearch 不可用
+2023/02/27 16:47:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:43 Elasticsearch 不可用
+2023/02/27 16:47:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:48 Elasticsearch 不可用
+2023/02/27 16:47:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:53 Elasticsearch 不可用
+2023/02/27 16:47:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:47:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:47:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:47:58 Elasticsearch 不可用
+2023/02/27 16:48:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:03 Elasticsearch 不可用
+2023/02/27 16:48:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:08 Elasticsearch 不可用
+2023/02/27 16:48:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:13 Elasticsearch 不可用
+2023/02/27 16:48:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:18 Elasticsearch 不可用
+2023/02/27 16:48:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:23 Elasticsearch 不可用
+2023/02/27 16:48:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:28 Elasticsearch 不可用
+2023/02/27 16:48:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:33 Elasticsearch 不可用
+2023/02/27 16:48:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:38 Elasticsearch 不可用
+2023/02/27 16:48:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:43 Elasticsearch 不可用
+2023/02/27 16:48:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:48 Elasticsearch 不可用
+2023/02/27 16:48:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:48:53 Elasticsearch 不可用
+2023/02/27 16:48:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:48:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:48:58 Elasticsearch 不可用
+2023/02/27 16:48:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:03 Elasticsearch 不可用
+2023/02/27 16:49:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:08 Elasticsearch 不可用
+2023/02/27 16:49:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:13 Elasticsearch 不可用
+2023/02/27 16:49:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:18 Elasticsearch 不可用
+2023/02/27 16:49:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:23 Elasticsearch 不可用
+2023/02/27 16:49:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:28 Elasticsearch 不可用
+2023/02/27 16:49:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:32 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:33 Elasticsearch 不可用
+2023/02/27 16:49:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:38 Elasticsearch 不可用
+2023/02/27 16:49:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:43 Elasticsearch 不可用
+2023/02/27 16:49:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:48 Elasticsearch 不可用
+2023/02/27 16:49:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:53 Elasticsearch 不可用
+2023/02/27 16:49:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:49:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:49:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:49:58 Elasticsearch 不可用
+2023/02/27 16:50:02 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:02 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:03 Elasticsearch 不可用
+2023/02/27 16:50:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:08 Elasticsearch 不可用
+2023/02/27 16:50:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:13 Elasticsearch 不可用
+2023/02/27 16:50:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:18 Elasticsearch 不可用
+2023/02/27 16:50:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:23 Elasticsearch 不可用
+2023/02/27 16:50:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:28 Elasticsearch 不可用
+2023/02/27 16:50:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:33 Elasticsearch 不可用
+2023/02/27 16:50:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:38 Elasticsearch 不可用
+2023/02/27 16:50:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:43 Elasticsearch 不可用
+2023/02/27 16:50:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:48 Elasticsearch 不可用
+2023/02/27 16:50:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:50:53 Elasticsearch 不可用
+2023/02/27 16:50:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:50:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:50:58 Elasticsearch 不可用
+2023/02/27 16:50:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:03 Elasticsearch 不可用
+2023/02/27 16:51:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:08 Elasticsearch 不可用
+2023/02/27 16:51:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:13 Elasticsearch 不可用
+2023/02/27 16:51:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:18 Elasticsearch 不可用
+2023/02/27 16:51:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:23 Elasticsearch 不可用
+2023/02/27 16:51:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:28 Elasticsearch 不可用
+2023/02/27 16:51:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:33 Elasticsearch 不可用
+2023/02/27 16:51:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:38 Elasticsearch 不可用
+2023/02/27 16:51:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:43 Elasticsearch 不可用
+2023/02/27 16:51:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:48 Elasticsearch 不可用
+2023/02/27 16:51:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:53 Elasticsearch 不可用
+2023/02/27 16:51:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:51:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:51:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:51:58 Elasticsearch 不可用
+2023/02/27 16:52:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:03 Elasticsearch 不可用
+2023/02/27 16:52:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:08 Elasticsearch 不可用
+2023/02/27 16:52:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:13 Elasticsearch 不可用
+2023/02/27 16:52:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:18 Elasticsearch 不可用
+2023/02/27 16:52:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:23 Elasticsearch 不可用
+2023/02/27 16:52:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:28 Elasticsearch 不可用
+2023/02/27 16:52:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:33 Elasticsearch 不可用
+2023/02/27 16:52:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:38 Elasticsearch 不可用
+2023/02/27 16:52:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:43 Elasticsearch 不可用
+2023/02/27 16:52:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:48 Elasticsearch 不可用
+2023/02/27 16:52:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:52:53 Elasticsearch 不可用
+2023/02/27 16:52:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:52:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:52:58 Elasticsearch 不可用
+2023/02/27 16:52:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:03 Elasticsearch 不可用
+2023/02/27 16:53:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:08 Elasticsearch 不可用
+2023/02/27 16:53:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:13 Elasticsearch 不可用
+2023/02/27 16:53:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:18 Elasticsearch 不可用
+2023/02/27 16:53:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:23 Elasticsearch 不可用
+2023/02/27 16:53:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:28 Elasticsearch 不可用
+2023/02/27 16:53:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:33 Elasticsearch 不可用
+2023/02/27 16:53:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:38 Elasticsearch 不可用
+2023/02/27 16:53:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:43 Elasticsearch 不可用
+2023/02/27 16:53:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:48 Elasticsearch 不可用
+2023/02/27 16:53:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:53 Elasticsearch 不可用
+2023/02/27 16:53:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:53:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:53:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:53:58 Elasticsearch 不可用
+2023/02/27 16:54:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:03 Elasticsearch 不可用
+2023/02/27 16:54:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:08 Elasticsearch 不可用
+2023/02/27 16:54:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:13 Elasticsearch 不可用
+2023/02/27 16:54:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:18 Elasticsearch 不可用
+2023/02/27 16:54:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:23 Elasticsearch 不可用
+2023/02/27 16:54:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:28 Elasticsearch 不可用
+2023/02/27 16:54:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:33 Elasticsearch 不可用
+2023/02/27 16:54:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:38 Elasticsearch 不可用
+2023/02/27 16:54:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:43 Elasticsearch 不可用
+2023/02/27 16:54:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:46 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:48 Elasticsearch 不可用
+2023/02/27 16:54:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:53 Elasticsearch 不可用
+2023/02/27 16:54:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:54:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:54:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:54:58 Elasticsearch 不可用
+2023/02/27 16:54:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:01 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:01 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:03 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:03 Elasticsearch 不可用
+2023/02/27 16:55:06 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:06 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:08 Elasticsearch 不可用
+2023/02/27 16:55:08 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:11 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:11 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:13 Elasticsearch 不可用
+2023/02/27 16:55:13 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:16 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:16 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:18 Elasticsearch 不可用
+2023/02/27 16:55:18 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:21 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:21 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:23 Elasticsearch 不可用
+2023/02/27 16:55:23 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:26 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:26 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:28 Elasticsearch 不可用
+2023/02/27 16:55:28 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:31 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:31 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:33 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:33 Elasticsearch 不可用
+2023/02/27 16:55:36 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:36 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:38 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:38 Elasticsearch 不可用
+2023/02/27 16:55:41 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:41 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:43 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:43 Elasticsearch 不可用
+2023/02/27 16:55:46 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:47 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:48 Elasticsearch 不可用
+2023/02/27 16:55:48 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:51 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:51 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:53 Elasticsearch 不可用
+2023/02/27 16:55:53 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:56 API https://www.baidu.com 状态码正常 
+2023/02/27 16:55:56 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:55:58 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:55:58 Elasticsearch 不可用
+2023/02/27 16:56:34 API https://www.baidu.com 状态码正常 
+2023/02/27 16:56:34 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:56:36 Elasticsearch 不可用
+2023/02/27 16:56:36 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:56:39 API https://www.baidu.com 状态码正常 
+2023/02/27 16:56:39 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:56:41 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:56:41 Elasticsearch 不可用
+2023/02/27 16:56:43 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:56:44 API https://www.baidu.com 状态码正常 
+2023/02/27 16:56:44 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:56:46 Elasticsearch 不可用
+2023/02/27 16:56:46 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:56:49 API https://www.baidu.com 状态码正常 
+2023/02/27 16:56:49 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:56:51 Elasticsearch 不可用
+2023/02/27 16:56:51 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:56:53 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:56:54 API https://www.baidu.com 状态码正常 
+2023/02/27 16:56:54 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:56:56 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:56:56 Elasticsearch 不可用
+2023/02/27 16:56:59 API https://www.baidu.com 状态码正常 
+2023/02/27 16:56:59 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:01 Elasticsearch 不可用
+2023/02/27 16:57:01 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:02 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:57:04 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:04 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:06 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:06 Elasticsearch 不可用
+2023/02/27 16:57:09 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:09 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:11 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:57:11 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:11 Elasticsearch 不可用
+2023/02/27 16:57:14 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:14 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:16 Elasticsearch 不可用
+2023/02/27 16:57:16 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:19 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:19 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:20 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:57:21 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:21 Elasticsearch 不可用
+2023/02/27 16:57:24 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:24 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:26 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:26 Elasticsearch 不可用
+2023/02/27 16:57:40 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:57:41 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:57:42 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:57:43 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:57:44 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:44 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:46 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:46 Elasticsearch 不可用
+2023/02/27 16:57:49 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:57:49 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:49 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:50 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:57:51 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:57:51 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:51 Elasticsearch 不可用
+2023/02/27 16:57:52 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:57:53 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:57:54 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:54 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:57:56 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:57:56 Elasticsearch 不可用
+2023/02/27 16:57:58 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:57:59 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:57:59 API https://www.baidu.com 状态码正常 
+2023/02/27 16:57:59 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:58:00 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:58:01 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:58:01 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:58:01 Elasticsearch 不可用
+2023/02/27 16:58:03 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:58:04 API https://www.baidu.com 状态码正常 
+2023/02/27 16:58:04 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:58:06 Elasticsearch 不可用
+2023/02/27 16:58:06 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:58:07 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:58:08 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
+2023/02/27 16:58:09 192.168.0.2:3306 不可达,原因为dial tcp 192.168.0.2:3306: i/o timeout
+2023/02/27 16:58:09 API https://www.baidu.com 状态码正常 
+2023/02/27 16:58:09 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:58:10 192.168.0.3:6379 不可达,原因为dial tcp 192.168.0.3:6379: i/o timeout
+2023/02/27 16:58:11 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:58:11 Elasticsearch 不可用
+2023/02/27 16:58:12 redis_client异常%!(EXTRA *net.OpError=dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.)
+2023/02/27 16:58:14 API https://www.baidu.com 状态码正常 
+2023/02/27 16:58:14 API https://cn.bing.com/ 状态码正常 
+2023/02/27 16:58:16 127.0.0.1:3306 不可达,原因为dial tcp 127.0.0.1:3306: i/o timeout
+2023/02/27 16:58:16 MySQL 服务不可用：dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2023/02/27 16:58:16 Elasticsearch 不可用
+2023/02/27 16:58:17 127.0.0.1:6379 不可达,原因为dial tcp 127.0.0.1:6379: i/o timeout
