@@ -1,33 +1,34 @@
-{"IP":"127.0.0.1","Port":3306,"Type":"Host","err_reson":"dial tcp 127.0.0.1:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:50:52+08:00"}
-{"IP":"127.0.0.1","Port":6379,"Type":"Host","err_reson":"dial tcp 127.0.0.1:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:50:53+08:00"}
-{"IP":"192.168.0.2","Port":3306,"Type":"Host","err_reson":"dial tcp 192.168.0.2:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:50:54+08:00"}
-{"IP":"192.168.0.3","Port":6379,"Type":"Host","err_reson":"dial tcp 192.168.0.3:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:50:55+08:00"}
-
-
-{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T10:50:56+08:00","url":"https://www.baidu1.com"}
-{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T10:50:56+08:00","url":"https://cn.bing.com/"}
-
-{"level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T10:50:58+08:00","type":"elasticSearch"}
-{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused 
-
-
-
-it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T10:50:58+08:00"}
-{"IP":"127.0.0.1","Port":3306,"Type":"Host","err_reson":"dial tcp 127.0.0.1:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:51:01+08:00"}
-
-{"Err_reson":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"6379","Type":"Redis","level":"error","msg":"Redis 状态异常","time":"2023-02-28T10:51:05+08:00"}
-
-
-
-{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T10:51:01+08:00","url":"https://www.baidu1.com"}
-{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T10:51:01+08:00","url":"https://cn.bing.com/"}
-{"IP":"127.0.0.1","Port":6379,"Type":"Host","err_reson":"dial tcp 127.0.0.1:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:51:02+08:00"}
-{"IP":"192.168.0.2","Port":3306,"Type":"Host","err_reson":"dial tcp 192.168.0.2:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:51:03+08:00"}
-{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T10:51:03+08:00"}
-{"level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T10:51:03+08:00","type":"elasticSearch"}
-{"IP":"192.168.0.3","Port":6379,"Type":"Host","err_reson":"dial tcp 192.168.0.3:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T10:51:04+08:00"}
-{"Err_reson":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"6379","Type":"Redis","level":"error","msg":"Redis 状态异常","time":"2023-02-28T10:51:05+08:00"}
-{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T10:51:06+08:00","url":"https://www.baidu1.com"}
-{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T10:51:06+08:00","url":"https://cn.bing.com/"}
-{"level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T10:51:08+08:00","type":"elasticSearch"}
-{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T10:51:08+08:00"}
+{"IP":"192.168.0.3","Port":6379,"Type":"Host","err_reson":"dial tcp 192.168.0.3:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:39+08:00"}
+{"IP":"127.0.0.1","Port":3306,"Type":"Host","err_reson":"dial tcp 127.0.0.1:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:40+08:00"}
+{"IP":"127.0.0.1","Port":6379,"Type":"Host","err_reson":"dial tcp 127.0.0.1:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:41+08:00"}
+{"IP":"192.168.0.2","Port":3306,"Type":"Host","err_reson":"dial tcp 192.168.0.2:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:42+08:00"}
+{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T11:02:43+08:00","url":"https://www.baidu1.com"}
+{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T11:02:44+08:00","url":"https://cn.bing.com/"}
+{"IP":"localhost","Port":"9200","Type":"elasticSearch","level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T11:02:46+08:00"}
+{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T11:02:46+08:00"}
+{"IP":"192.168.0.2","Port":3306,"Type":"Host","err_reson":"dial tcp 192.168.0.2:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:48+08:00"}
+{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T11:02:48+08:00","url":"https://www.baidu1.com"}
+{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T11:02:49+08:00","url":"https://cn.bing.com/"}
+{"IP":"192.168.0.3","Port":6379,"Type":"Host","err_reson":"dial tcp 192.168.0.3:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:49+08:00"}
+{"IP":"127.0.0.1","Port":3306,"Type":"Host","err_reson":"dial tcp 127.0.0.1:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:50+08:00"}
+{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T11:02:51+08:00"}
+{"IP":"localhost","Port":"9200","Type":"elasticSearch","level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T11:02:51+08:00"}
+{"IP":"127.0.0.1","Port":6379,"Type":"Host","err_reson":"dial tcp 127.0.0.1:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:51+08:00"}
+{"Err_reson":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"6379","Type":"Redis","level":"error","msg":"Redis 状态异常","time":"2023-02-28T11:02:53+08:00"}
+{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T11:02:53+08:00","url":"https://www.baidu1.com"}
+{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T11:02:54+08:00","url":"https://cn.bing.com/"}
+{"IP":"localhost","Port":"9200","Type":"elasticSearch","level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T11:02:56+08:00"}
+{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T11:02:56+08:00"}
+{"IP":"127.0.0.1","Port":3306,"Type":"Host","err_reson":"dial tcp 127.0.0.1:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:57+08:00"}
+{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T11:02:58+08:00","url":"https://www.baidu1.com"}
+{"IP":"127.0.0.1","Port":6379,"Type":"Host","err_reson":"dial tcp 127.0.0.1:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:58+08:00"}
+{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T11:02:59+08:00","url":"https://cn.bing.com/"}
+{"IP":"192.168.0.2","Port":3306,"Type":"Host","err_reson":"dial tcp 192.168.0.2:3306: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:02:59+08:00"}
+{"IP":"192.168.0.3","Port":6379,"Type":"Host","err_reson":"dial tcp 192.168.0.3:6379: i/o timeout","level":"error","msg":"主机 状态异常","time":"2023-02-28T11:03:00+08:00"}
+{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T11:03:01+08:00"}
+{"IP":"localhost","Port":"9200","Type":"elasticSearch","level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T11:03:01+08:00"}
+{"Err_reson":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"6379","Type":"Redis","level":"error","msg":"Redis 状态异常","time":"2023-02-28T11:03:02+08:00"}
+{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-02-28T11:03:03+08:00","url":"https://www.baidu1.com"}
+{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-02-28T11:03:04+08:00","url":"https://cn.bing.com/"}
+{"IP":"localhost","Port":"9200","Type":"elasticSearch","level":"error","msg":"elasticSearch 状态异常","status":500,"time":"2023-02-28T11:03:06+08:00"}
+{"Err_reson":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.","IP":"localhost","Port":"3306","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-02-28T11:03:06+08:00"}

@@ -7,6 +7,12 @@ import (
 	"time"
 )
 
+const (
+	Protocol = "http"
+	Host     = "localhost"
+	Port     = "9200"
+)
+
 func Es_probe() {
 	// 创建日志文件
 	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
@@ -35,12 +41,16 @@ func Es_probe() {
 	for range ticker.C {
 		if isElasticsearchAvailable(httpClient) {
 			log.WithFields(log.Fields{
-				"type":   "elasticSearch",
+				"Type":   "elasticSearch",
+				"IP":     Host,
+				"Port":   Port,
 				"status": 200,
 			}).Info("elasticSearch 状态正常")
 		} else {
 			log.WithFields(log.Fields{
-				"type":   "elasticSearch",
+				"Type":   "elasticSearch",
+				"IP":     Host,
+				"Port":   Port,
 				"status": 500,
 			}).Error("elasticSearch 状态异常")
 		}
@@ -48,7 +58,8 @@ func Es_probe() {
 }
 
 func isElasticsearchAvailable(httpClient *http.Client) bool {
-	resp, err := httpClient.Get("http://localhost:9200/_cluster/health")
+	url := Protocol + "://" + Host + ":" + Port + "/_cluster/health"
+	resp, err := httpClient.Get(url)
 	if err != nil {
 		return false
 	}
