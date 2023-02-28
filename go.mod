@@ -3,9 +3,9 @@ module svc_probe
 go 1.20
 
 require (
-	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/go-sql-driver/mysql v1.7.0
+	github.com/sirupsen/logrus v1.9.0
 )
 
 require (

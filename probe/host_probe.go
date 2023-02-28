@@ -2,7 +2,7 @@ package probe
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"net"
 	"os"
 	"time"
@@ -21,15 +21,19 @@ func Host_probe() {
 	}
 
 	// 创建日志文件
-	logFile, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
+	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
-		fmt.Println("无法创建log文件：", err)
-		return
+		log.Fatalf("failed to create log file: %v", err)
 	}
+	defer file.Close()
+	// 日志作为JSON而不是默认的ASCII格式器.
+	log.SetFormatter(&log.JSONFormatter{})
 
-	// 设置日志输出到文件
-	log.SetOutput(logFile)
-	defer logFile.Close()
+	// 输出到标准输出,可以是任何io.Writer
+	log.SetOutput(file)
+
+	// 只记录xx级别或以上的日志
+	log.SetLevel(log.TraceLevel)
 
 	// 开始进行探测
 	for {
@@ -38,10 +42,20 @@ func Host_probe() {
 				address := fmt.Sprintf("%s:%d", ip, port)
 				conn, err := net.DialTimeout("tcp", address, time.Second*1)
 				if err != nil {
-					log.Printf("%s:%d 不可达,原因为%s\n", ip, port, err)
+					log.WithFields(log.Fields{
+						"Type":      "Host",
+						"IP":        ip,
+						"Port":      port,
+						"err_reson": err,
+					}).Error("主机 状态异常")
 				} else {
 					conn.Close()
-					log.Printf("%s:%d 可达\n", ip, port)
+					// log.Printf("%s:%d 可达\n", ip, port)
+					log.WithFields(log.Fields{
+						"Type": "Host",
+						"IP":   ip,
+						"Port": port,
+					}).Info("主机 状态正常")
 				}
 			}
 		}

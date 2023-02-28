@@ -10,4 +10,5 @@ func main() {
 	go Es_probe()
 	go Redis_probe()
 	Host_probe()
+
 }

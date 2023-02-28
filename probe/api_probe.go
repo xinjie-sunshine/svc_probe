@@ -1,15 +1,13 @@
 package probe
 
 import (
-	"log"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 	"time"
 )
 
 func Api_probe() {
-	// 多个API地址
-	apiAddrs := []string{"https://www.baidu.com", "https://cn.bing.com/"}
 
 	// 创建日志文件
 	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
@@ -17,9 +15,20 @@ func Api_probe() {
 		log.Fatalf("failed to create log file: %v", err)
 	}
 	defer file.Close()
+	// 日志作为JSON而不是默认的ASCII格式器.
+	log.SetFormatter(&log.JSONFormatter{})
 
-	// 设置日志输出到文件
+	// 输出到标准输出,可以是任何io.Writer
 	log.SetOutput(file)
+
+	// 只记录xx级别或以上的日志
+	log.SetLevel(log.TraceLevel)
+
+	// 多个API地址
+	apiAddrs := []string{"https://www.baidu1.com", "https://cn.bing.com/"}
+
+	// // 设置日志输出到文件
+	// log.SetOutput(file)
 	ticker := time.NewTicker(time.Second * 5)
 	defer ticker.Stop()
 
@@ -30,10 +39,16 @@ func Api_probe() {
 
 			if err != nil || resp.StatusCode != http.StatusOK {
 				// API不可用
-				log.Printf("API %s 状态码异常 \n", apiAddr)
+				log.WithFields(log.Fields{
+					"url":    apiAddr,
+					"status": 500,
+				}).Error("API 状态码异常")
 			} else {
 				// API可用
-				log.Printf("API %s 状态码正常 \n", apiAddr)
+				log.WithFields(log.Fields{
+					"url":    apiAddr,
+					"status": 200,
+				}).Info("API 状态码正常")
 			}
 		}
 	}

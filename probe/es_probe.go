@@ -1,7 +1,7 @@
 package probe
 
 import (
-	"log"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 	"time"
@@ -9,14 +9,19 @@ import (
 
 func Es_probe() {
 	// 创建日志文件
-	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
+	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("failed to create log file: %v", err)
 	}
 	defer file.Close()
+	// 日志作为JSON而不是默认的ASCII格式器.
+	log.SetFormatter(&log.JSONFormatter{})
 
-	// 设置日志输出到文件
+	// 输出到标准输出,可以是任何io.Writer
 	log.SetOutput(file)
+
+	// 只记录xx级别或以上的日志
+	log.SetLevel(log.TraceLevel)
 
 	// 创建HTTP客户端
 	httpClient := &http.Client{
@@ -29,9 +34,15 @@ func Es_probe() {
 
 	for range ticker.C {
 		if isElasticsearchAvailable(httpClient) {
-			log.Println("Elasticsearch 可用")
+			log.WithFields(log.Fields{
+				"type":   "elasticSearch",
+				"status": 200,
+			}).Info("elasticSearch 状态正常")
 		} else {
-			log.Println("Elasticsearch 不可用")
+			log.WithFields(log.Fields{
+				"type":   "elasticSearch",
+				"status": 500,
+			}).Error("elasticSearch 状态异常")
 		}
 	}
 }
