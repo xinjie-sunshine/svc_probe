@@ -1,0 +1,7 @@
+dbName: "mydb"
+dbUser: "root"
+dbPassword: "root"
+dbHost: "localhost"
+dbPort: "3306"
+interval: 5
+

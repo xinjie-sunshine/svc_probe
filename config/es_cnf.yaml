@@ -1,0 +1,3 @@
+addr_and_ports:
+  - http://localhost:9200/_cluster/health
+interval: 5

@@ -2,66 +2,57 @@ package probe
 
 import (
 	"context"
-	log "github.com/sirupsen/logrus"
 	"os"
-	"time"
+
+	"github.com/sirupsen/logrus"
 
 	"github.com/go-redis/redis/v8"
+	"github.com/spf13/viper"
 )
 
-const (
-	// Redis连接信息
-	redisHost     = "localhost"
-	redisPort     = "6379"
-	redisPassword = ""
-)
-
-func Redis_probe() {
-
-	// 创建日志文件
-	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+func Redis_probe_test() {
+	// Load configuration from file
+	viper.Reset()
+	viper.SetConfigName("redis_cnf")
+	viper.AddConfigPath("config/")
+	err := viper.ReadInConfig()
 	if err != nil {
-		log.Fatalf("failed to create log file: %v", err)
+		logrus.WithError(err).Fatal("Failed to read configuration file")
 	}
-	defer file.Close()
-	// 日志作为JSON而不是默认的ASCII格式器.
-	log.SetFormatter(&log.JSONFormatter{})
 
-	// 输出到标准输出,可以是任何io.Writer
-	log.SetOutput(file)
+	// Initialize logger
+	logrus.SetFormatter(&logrus.JSONFormatter{})
+	// logrus.SetOutput(os.Stdout)
+	logFile, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		logrus.WithError(err).Fatal("Failed to open log file")
+	}
+	logrus.SetOutput(logFile)
+	logrus.SetLevel(logrus.InfoLevel)
 
-	// 只记录xx级别或以上的日志
-	log.SetLevel(log.TraceLevel)
+	//从配置文件获取-未获取到数据
+	addr_and_ports := viper.GetString("addr_and_ports")
 
 	// 创建Redis客户端
 	client := redis.NewClient(&redis.Options{
-		Addr:     redisHost + ":" + redisPort,
-		Password: redisPassword,
+		Addr:     addr_and_ports,
+		Password: "",
 		DB:       0,
 	})
 
-	// 每分钟执行一次探测
-	ticker := time.NewTicker(time.Second * 5)
-	defer ticker.Stop()
-
-	for range ticker.C {
-		// 探测Redis存活状态
-		_, err := client.Ping(context.Background()).Result()
-		if err != nil {
-			log.WithFields(log.Fields{
-				"Type":      "Redis",
-				"IP":        redisHost,
-				"Port":      redisPort,
-				"Err_reson": err,
-			}).Error("Redis 状态异常")
-
-		} else {
-			log.WithFields(log.Fields{
-				"Type": "Redis",
-				"IP":   redisHost,
-				"Port": redisPort,
-			}).Info("Redis 状态异常")
-		}
-
+	// 探测Redis存活状态
+	_, err = client.Ping(context.Background()).Result()
+	if err != nil {
+		logrus.WithFields(logrus.Fields{
+			"Type":      "Redis",
+			"host":      addr_and_ports,
+			"Err_reson": err,
+		}).Error("Redis 状态异常")
+	} else {
+		logrus.WithFields(logrus.Fields{
+			"Type": "Redis",
+			"host": addr_and_ports,
+		}).Info("Redis 状态异常")
 	}
+
 }

@@ -1,66 +1,47 @@
 package probe
 
 import (
-	"fmt"
-	log "github.com/sirupsen/logrus"
 	"net"
 	"os"
 	"time"
+
+	"github.com/sirupsen/logrus"
+	"github.com/spf13/viper"
 )
 
-const (
-	interval = 5 // 每隔5秒进行一次探测
-)
-
-func Host_probe() {
-	// 要进行探测的IP地址和端口
-	targets := map[string][]int{
-		"127.0.0.1":   {3306, 6379},
-		"192.168.0.2": {3306},
-		"192.168.0.3": {6379},
-	}
-
-	// 创建日志文件
-	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+func Host_probe_test() {
+	// Load configuration from file
+	viper.Reset()
+	viper.SetConfigName("host_cnf")
+	viper.AddConfigPath("config/")
+	err := viper.ReadInConfig()
 	if err != nil {
-		log.Fatalf("failed to create log file: %v", err)
+		logrus.WithError(err).Fatal("Failed to read configuration file")
 	}
-	defer file.Close()
-	// 日志作为JSON而不是默认的ASCII格式器.
-	log.SetFormatter(&log.JSONFormatter{})
 
-	// 输出到标准输出,可以是任何io.Writer
-	log.SetOutput(file)
+	// Initialize logger
+	logrus.SetFormatter(&logrus.JSONFormatter{})
+	// logrus.SetOutput(os.Stdout)
+	logFile, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		logrus.WithError(err).Fatal("Failed to open log file")
+	}
+	logrus.SetOutput(logFile)
+	logrus.SetLevel(logrus.InfoLevel)
 
-	// 只记录xx级别或以上的日志
-	log.SetLevel(log.TraceLevel)
+	hostsAndPorts := viper.GetStringSlice("hosts_and_ports")
+	// log.Print(hostsAndPorts)
+	timeout := time.Duration(viper.GetInt("timeout")) * time.Second
+	// timeout := time.Duration(5) * time.Second
 
-	// 开始进行探测
-	for {
-		for ip, ports := range targets {
-			for _, port := range ports {
-				address := fmt.Sprintf("%s:%d", ip, port)
-				conn, err := net.DialTimeout("tcp", address, time.Second*1)
-				if err != nil {
-					log.WithFields(log.Fields{
-						"Type":      "Host",
-						"IP":        ip,
-						"Port":      port,
-						"err_reson": err,
-					}).Error("主机 状态异常")
-				} else {
-					conn.Close()
-					// log.Printf("%s:%d 可达\n", ip, port)
-					log.WithFields(log.Fields{
-						"Type": "Host",
-						"IP":   ip,
-						"Port": port,
-					}).Info("主机 状态正常")
-				}
-			}
+	for _, hostAndPort := range hostsAndPorts {
+		conn, err := net.DialTimeout("tcp", hostAndPort, timeout)
+		if err != nil {
+			logrus.WithError(err).WithField("host", hostAndPort).Error("Connection failed")
+		} else {
+			conn.Close()
+			logrus.WithField("host", hostAndPort).Info("Connection succeeded")
 		}
-
-		// 等待一段时间再进行下一次探测
-		time.Sleep(time.Second * interval)
 	}
+
 }

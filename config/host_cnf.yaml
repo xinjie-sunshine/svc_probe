@@ -1,0 +1,6 @@
+hosts_and_ports:
+  - google.com:80
+  - facebook.com:80
+  - example.com:80
+interval: 5
+timeout: 2

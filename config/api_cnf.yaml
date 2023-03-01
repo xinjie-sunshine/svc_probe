@@ -1,0 +1,4 @@
+addr_and_ports:
+  - https://www.baidu1.com
+  - https://cn.bing.com
+interval: 5

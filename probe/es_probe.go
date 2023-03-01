@@ -1,70 +1,56 @@
 package probe
 
 import (
-	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 	"time"
-)
 
-const (
-	Protocol = "http"
-	Host     = "localhost"
-	Port     = "9200"
+	"github.com/sirupsen/logrus"
+	"github.com/spf13/viper"
 )
 
 func Es_probe() {
-	// 创建日志文件
-	file, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	// Load configuration from file
+	viper.Reset()
+	viper.SetConfigName("es_cnf")
+	viper.AddConfigPath("config/")
+	err := viper.ReadInConfig()
 	if err != nil {
-		log.Fatalf("failed to create log file: %v", err)
+		logrus.WithError(err).Fatal("Failed to read configuration file")
 	}
-	defer file.Close()
-	// 日志作为JSON而不是默认的ASCII格式器.
-	log.SetFormatter(&log.JSONFormatter{})
 
-	// 输出到标准输出,可以是任何io.Writer
-	log.SetOutput(file)
+	// Initialize logger
+	logrus.SetFormatter(&logrus.JSONFormatter{})
+	// logrus.SetOutput(os.Stdout)
+	logFile, err := os.OpenFile("probe.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		logrus.WithError(err).Fatal("Failed to open log file")
+	}
+	logrus.SetOutput(logFile)
+	logrus.SetLevel(logrus.InfoLevel)
 
-	// 只记录xx级别或以上的日志
-	log.SetLevel(log.TraceLevel)
-
+	hostsAndPorts := viper.GetStringSlice("addr_and_ports")
 	// 创建HTTP客户端
 	httpClient := &http.Client{
 		Timeout: time.Second * 5, // 设置5秒的超时时间
 	}
 
-	// 每1分钟探测一次Elasticsearch可用性
-	ticker := time.NewTicker(time.Second * 5)
-	defer ticker.Stop()
-
-	for range ticker.C {
-		if isElasticsearchAvailable(httpClient) {
-			log.WithFields(log.Fields{
-				"Type":   "elasticSearch",
-				"IP":     Host,
-				"Port":   Port,
-				"status": 200,
-			}).Info("elasticSearch 状态正常")
-		} else {
-			log.WithFields(log.Fields{
-				"Type":   "elasticSearch",
-				"IP":     Host,
-				"Port":   Port,
+	for _, apiAddr := range hostsAndPorts {
+		// 发送HTTP HEAD请求探测API存活状态
+		resp, err := httpClient.Get(apiAddr)
+		if err != nil || resp.StatusCode != http.StatusOK {
+			// API不可用
+			logrus.WithFields(logrus.Fields{
+				"url":    apiAddr,
 				"status": 500,
-			}).Error("elasticSearch 状态异常")
+			}).Error("ES 状态异常")
+		} else {
+			// API可用
+			logrus.WithFields(logrus.Fields{
+				"url":    apiAddr,
+				"status": 200,
+			}).Info("ES 状态正常")
 		}
-	}
-}
 
-func isElasticsearchAvailable(httpClient *http.Client) bool {
-	url := Protocol + "://" + Host + ":" + Port + "/_cluster/health"
-	resp, err := httpClient.Get(url)
-	if err != nil {
-		return false
 	}
-	if resp.StatusCode != http.StatusOK {
-		return false
-	}
-	return true
 }

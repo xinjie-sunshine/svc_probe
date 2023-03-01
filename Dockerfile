@@ -12,7 +12,7 @@ ADD go.mod .
 ADD go.sum .
 RUN go mod download
 COPY . .
-RUN go build -ldflags="-s -w" -o /app/SP main.go
+RUN go build -ldflags="-s -w" -o /app/Svc_Probe main.go
 
 FROM alpine
 
@@ -20,6 +20,6 @@ FROM alpine
 ENV TZ Asia/Shanghai
 
 WORKDIR /app
-COPY --from=builder /app/SP /app/SP
+COPY --from=builder /app/Svc_Probe /app/Svc_Probe
 
-CMD ["./SP"]
+CMD ["./Svc_Probe"]

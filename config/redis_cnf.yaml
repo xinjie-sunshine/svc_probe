@@ -1,0 +1,2 @@
+hosts_and_ports: "localhost:6379"
+interval: 5
