@@ -1,2 +1,4 @@
-hosts_and_ports: "localhost:6379"
+hosts_and_ports:
+  - localhost:6379
+  - localhost:16379
 interval: 5

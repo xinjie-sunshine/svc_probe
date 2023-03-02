@@ -1,11 +1,17 @@
-{"error":"dial tcp 172.217.160.110:80: i/o timeout","host":"google.com:80","level":"error","msg":"Connection failed","time":"2023-03-01T17:05:53+08:00"}
-{"error":"dial tcp 127.0.0.1:80: i/o timeout","host":"facebook.com:80","level":"error","msg":"Connection failed","time":"2023-03-01T17:05:55+08:00"}
-{"host":"example.com:80","level":"info","msg":"Connection succeeded","time":"2023-03-01T17:05:55+08:00"}
-{"level":"error","msg":"ES 状态异常","status":500,"time":"2023-03-01T17:05:57+08:00","url":"http://localhost:9200/_cluster/health"}
-{"error":"dial tcp 172.217.160.110:80: i/o timeout","host":"google.com:80","level":"error","msg":"Connection failed","time":"2023-03-01T17:05:59+08:00"}
-{"error":"dial tcp 127.0.0.1:80: i/o timeout","host":"facebook.com:80","level":"error","msg":"Connection failed","time":"2023-03-01T17:06:01+08:00"}
-{"host":"example.com:80","level":"info","msg":"Connection succeeded","time":"2023-03-01T17:06:01+08:00"}
-{"level":"error","msg":"ES 状态异常","status":500,"time":"2023-03-01T17:06:04+08:00","url":"http://localhost:9200/_cluster/health"}
-{"error":"dial tcp 142.251.43.14:80: i/o timeout","host":"google.com:80","level":"error","msg":"Connection failed","time":"2023-03-01T17:06:06+08:00"}
-{"error":"dial tcp 127.0.0.1:80: i/o timeout","host":"facebook.com:80","level":"error","msg":"Connection failed","time":"2023-03-01T17:06:08+08:00"}
-{"host":"example.com:80","level":"info","msg":"Connection succeeded","time":"2023-03-01T17:06:08+08:00"}
+{"error":"dial tcp 142.251.42.238:80: i/o timeout","host":"google.com:80","level":"error","msg":"Connection failed","time":"2023-03-02T09:54:52+08:00"}
+{"error":"dial tcp 157.240.8.50:80: i/o timeout","host":"facebook.com:80","level":"error","msg":"Connection failed","time":"2023-03-02T09:54:54+08:00"}
+{"host":"example.com:80","level":"info","msg":"Connection succeeded","time":"2023-03-02T09:54:55+08:00"}
+{"level":"error","msg":"ES 状态异常","status":500,"time":"2023-03-02T09:54:57+08:00","url":"http://localhost:9200/_cluster/health"}
+{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-03-02T09:54:57+08:00","url":"https://www.baidu1.com"}
+{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-03-02T09:54:58+08:00","url":"https://cn.bing.com"}
+{"Err_reson":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.","Type":"Redis","host":"localhost:6379","level":"error","msg":"Redis 状态异常","time":"2023-03-02T09:55:07+08:00"}
+{"Err_reson":"dial tcp [::1]:16379: connectex: No connection could be made because the target machine actively refused it.","Type":"Redis","host":"localhost:16379","level":"error","msg":"Redis 状态异常","time":"2023-03-02T09:55:17+08:00"}
+{"Host":"tcp(localhost:3306)/mydb","Type":"MySQl","level":"info","msg":"MySql 状态正常","time":"2023-03-02T09:55:17+08:00"}
+{"Err_reson":"dial tcp [::1]:3307: connectex: No connection could be made because the target machine actively refused it.","Host":"tcp(localhost:3307)/mydb","Type":"MySQl","level":"error","msg":"MySql 状态异常","time":"2023-03-02T09:55:19+08:00"}
+{"error":"dial tcp 142.251.42.238:80: i/o timeout","host":"google.com:80","level":"error","msg":"Connection failed","time":"2023-03-02T09:55:21+08:00"}
+{"error":"dial tcp 157.240.8.50:80: i/o timeout","host":"facebook.com:80","level":"error","msg":"Connection failed","time":"2023-03-02T09:55:23+08:00"}
+{"host":"example.com:80","level":"info","msg":"Connection succeeded","time":"2023-03-02T09:55:23+08:00"}
+{"level":"error","msg":"ES 状态异常","status":500,"time":"2023-03-02T09:55:25+08:00","url":"http://localhost:9200/_cluster/health"}
+{"level":"error","msg":"API 状态码异常","status":500,"time":"2023-03-02T09:55:26+08:00","url":"https://www.baidu1.com"}
+{"level":"info","msg":"API 状态码正常","status":200,"time":"2023-03-02T09:55:26+08:00","url":"https://cn.bing.com"}
+{"Err_reson":"dial tcp [::1]:6379: connectex: No connection could be made because the target machine actively refused it.","Type":"Redis","host":"localhost:6379","level":"error","msg":"Redis 状态异常","time":"2023-03-02T09:55:35+08:00"}

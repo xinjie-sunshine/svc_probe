@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-func Redis_probe_test() {
+func Redis_probe() {
 	// Load configuration from file
 	viper.Reset()
 	viper.SetConfigName("redis_cnf")
@@ -31,28 +31,31 @@ func Redis_probe_test() {
 	logrus.SetLevel(logrus.InfoLevel)
 
 	//从配置文件获取-未获取到数据
-	addr_and_ports := viper.GetString("addr_and_ports")
+	addr_and_ports := viper.GetStringSlice("hosts_and_ports")
 
-	// 创建Redis客户端
-	client := redis.NewClient(&redis.Options{
-		Addr:     addr_and_ports,
-		Password: "",
-		DB:       0,
-	})
+	for _, apiAddr := range addr_and_ports {
 
-	// 探测Redis存活状态
-	_, err = client.Ping(context.Background()).Result()
-	if err != nil {
-		logrus.WithFields(logrus.Fields{
-			"Type":      "Redis",
-			"host":      addr_and_ports,
-			"Err_reson": err,
-		}).Error("Redis 状态异常")
-	} else {
-		logrus.WithFields(logrus.Fields{
-			"Type": "Redis",
-			"host": addr_and_ports,
-		}).Info("Redis 状态异常")
+		// 创建Redis客户端
+		client := redis.NewClient(&redis.Options{
+			Addr:     apiAddr,
+			Password: "",
+			DB:       0,
+		})
+
+		// 探测Redis存活状态
+		_, err = client.Ping(context.Background()).Result()
+		if err != nil {
+			logrus.WithFields(logrus.Fields{
+				"Type":      "Redis",
+				"host":      apiAddr,
+				"Err_reson": err,
+			}).Error("Redis 状态异常")
+		} else {
+			logrus.WithFields(logrus.Fields{
+				"Type": "Redis",
+				"host": apiAddr,
+			}).Info("Redis 状态正常")
+		}
+
 	}
-
 }

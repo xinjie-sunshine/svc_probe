@@ -2,15 +2,15 @@ package probe
 
 import (
 	"database/sql"
-	"fmt"
 	"os"
+	"strings"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )
 
-func Mysql_probe_test() {
+func Mysql_probe() {
 	// Load configuration from file
 	viper.Reset()
 	viper.SetConfigName("mysql_cnf")
@@ -30,34 +30,29 @@ func Mysql_probe_test() {
 	logrus.SetOutput(logFile)
 	logrus.SetLevel(logrus.InfoLevel)
 
-	dbHost := viper.GetString("dbHost")
-	dbPort := viper.GetString("dbPort")
-	dbUser := viper.GetString("dbUser")
-	dbPassword := viper.GetString("dbPassword")
-	dbName := viper.GetString("dbName")
-	// fmt.Print(dbHost, dbName)
+	con_stings := viper.GetStringSlice("hosts_and_ports")
+	for _, hostAndPort := range con_stings {
+		// 连接 MySQL 数据库
+		db, err := sql.Open("mysql", hostAndPort)
+		host := strings.Split(hostAndPort, "@")[1]
+		if err != nil {
+			logrus.Printf("连接 MySQL 数据库失败：%v", err)
+		}
 
-	// 连接 MySQL 数据库
-	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", dbUser, dbPassword, dbHost, dbPort, dbName))
-	if err != nil {
-		logrus.Printf("连接 MySQL 数据库失败：%v", err)
+		defer db.Close()
+		// 检查 MySQL 数据库的可用性
+		if err = db.Ping(); err != nil {
+			logrus.WithFields(logrus.Fields{
+				"Type":      "MySQl",
+				"Host":      host,
+				"Err_reson": err,
+			}).Error("MySql 状态异常")
+		} else {
+			logrus.WithFields(logrus.Fields{
+				"Type": "MySQl",
+				"Host": host,
+			}).Info("MySql 状态正常")
+		}
+
 	}
-
-	// 检查 MySQL 数据库的可用性
-	if err = db.Ping(); err != nil {
-		logrus.WithFields(logrus.Fields{
-			"Type":      "MySQl",
-			"IP":        dbHost,
-			"Port":      dbPort,
-			"Err_reson": err,
-		}).Error("MySql 状态异常")
-	} else {
-		logrus.WithFields(logrus.Fields{
-			"Type": "MySQl",
-			"IP":   dbHost,
-			"Port": dbPort,
-		}).Info("MySql 状态正常")
-	}
-
-	db.Close()
 }

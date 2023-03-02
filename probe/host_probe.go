@@ -9,7 +9,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-func Host_probe_test() {
+func Host_probe() {
 	// Load configuration from file
 	viper.Reset()
 	viper.SetConfigName("host_cnf")

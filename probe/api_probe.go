@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-func Api_probe_test() {
+func Api_probe() {
 	// Load configuration from file
 	viper.Reset()
 	viper.SetConfigName("api_cnf")

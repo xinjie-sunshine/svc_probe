@@ -1,7 +1,7 @@
-dbName: "mydb"
-dbUser: "root"
-dbPassword: "root"
-dbHost: "localhost"
-dbPort: "3306"
+# dbUser, dbPassword, dbHost, dbPort, dbName
+hosts_and_ports:
+  - root:root@tcp(localhost:3306)/mydb
+  - root:root@tcp(localhost:3307)/mydb
 interval: 5
+timeout: 2
 
